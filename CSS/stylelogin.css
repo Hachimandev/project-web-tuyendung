@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* border-bottom: 0.2px solid gray; */
+    position: fixed;
+    width: 100%;
+    float: left;
+    /* right: 12px; */
+}
+header.sticky{
+    background: #fff;
+    opacity: 0.9;
+    color: #000;
+}
+#test{
+    width: 100%;
+    height: 800px;
+}
+
+.navbar-brand-box,
+.navbar-nav {
+    display: inline-flex;
+    align-items: center;
+}
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.drawer-user{
+    width: 80%;
+    height: auto;
+}
+
+.navbar-close-button {
+    position: absolute;
+    top: 50;
+    right: 15px;
+}
+
+.navbar-close-button button {
+    padding: 5;
+}
+
+.navbar-close-button span {
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: gray;
+}
+
+section{
+    width: 50%;
+    float: left;
+}
+aside{
+    width: 50%;
+    float: left;
+    background-color: #0aa12b;
+}
+.formDK{
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+    background-color: white;
+}
+
+
+.container-fluids{
+    height: auto;
+}

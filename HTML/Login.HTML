@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/stylelogin.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JQUERY/jquery-3.7.1.min.js"></script>
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div>
+        <header>
+            <div id='navbar-backdrop'></div>
+            <nav class="navbar navbar-expand-md navbar-light bg-white" id="top-navigation">
+                <div class="container-fluid">
+                    <div class='navbar-brand-box' id="logo">
+                        <a class="navbar-brand position-relative" href=""><img src="../IMG/logo.jpg" alt="JobSearch" width="180px" height="60px"></a>            
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ml-auto d-none d-lg-flex">
+                            <div class='nav-group-1 d-flex'>
+                                <li class='nav-item'>                           
+                                    <a href="" class="nav-link nav-link-with-icon">
+                                        <img src="../IMG/iconhome.png" alt="" height="30px">
+                                        <span>Trang Chủ</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <img src="../IMG/iconJobs.jpg" alt="" height="30px">
+                                        <span>Việc Làm</span>
+                                    </a>                           
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <img src="../IMG/iconCV.png" alt="" height="30px">
+                                        <span>Hồ sơ & CV</span>
+                                    </a>                           
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <img src="../IMG/iconGioiThieu.png" alt="" height="30px">
+                                        <span>Giới Thiệu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <img src="../IMG/iconLienHe.jpg" alt="" height="30px">
+                                        <span>Liên Hệ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDangNhap">Đăng nhập</button>                      
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDangKy">Đăng ký</button>
+                                </li>
+                                <li class="nav-item" style="border-left: solid 0.2px gray; padding: 0 10px;">
+                                    <a href="" class="nav-link">
+                                        <span>Nhà Tuyển Dụng</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class='collapse navbar-collapse' id='navbar-menu' style="background-color: whitesmoke;">
+                <div class="navbar-close-button">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-label="Close">
+                        <span class="close">X</span>
+                    </button>
+                </div>
+                <ul class="navbar-nav">
+                    <div class='drawer-user'>
+                        <div class='drawer-login-action mt-5'>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDangNhap">Đăng nhập</button>    
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDangKy">Đăng ký</button>
+                        </div>
+                        <hr>
+                        <li class='nav-item font-weight-bolder mb-1'>
+                            <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="true" href="">
+                                <img src="../IMG/iconhome.png" alt="" height="30px">                               
+                                Trang Chủ
+                            </a></li>                      
+                        <li class='nav-item font-weight-bolder mb-1'>
+                            <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="true" href="">
+                                <img src="../IMG/iconJobs.jpg" alt="" height="30px">
+                                Việc Làm
+                            </a></li>
+                        <li class='nav-item font-weight-bolder mb-1'>
+                            <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="true" href="">
+                                <img src="../IMG/iconCV.png" alt="" height="30px">
+                                Hồ sơ & CV
+                            </a></li>
+                        <li class='nav-item font-weight-bolder mb-1'>
+                            <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="false" href="">
+                                <img src="../IMG/iconGioiThieu.png" alt="" height="30px">
+                                Giới Thiệu
+                            </a></li>
+                        <li class='nav-item font-weight-bolder mb-1'>
+                            <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="false" href="">
+                                <img src="../IMG/iconLienHe.jpg" alt="" height="30px">
+                                Liên Hệ
+                            </a></li>
+                        <hr>
+                        <li class='nav-item font-weight-bolder mb-1'>
+                            <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="false" href="">
+                                <a class="nav-link py-2 d-flex align-items-center" data-turbolinks="false" href="">
+                                    <span>Cho Nhà Tuyển Dụng</span>
+                                </a>
+                            </a></li>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <div  class="modal fade" id="modalDangNhap" >
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDangNhap" data-bs-dismiss="modal" style="text-decoration: underline;">Đăng nhập</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDangKy" data-bs-dismiss="modal">Đăng Ký</button>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <label for="email" class="form-label"></label>
+                                    <span id="erremail" style="color: red; font-size: small;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="password" class="form-control" name="password" id="pwd" placeholder="password">
+                                    <label for="em" class="form-label"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input type="checkbox" id="show-password" class="form-check">
+                                </div>
+                                <div class="col">
+                                    <label for="show-password" class="form-label">Hiện mật khẩu</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button type="button" class="btn btn-primary" id="btnDangNhap"> Đăng Nhập </button>
+                                <span id="errDangNhap" style="color: red; font-size: small;"></span>  
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>hoặc đăng nhập với</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="" class="btn btn-primary">Facbook</a>
+                                </div>
+                                <div class="col">
+                                    <p>or</p>
+                                </div>
+                                <div class="col">
+                                    <a href="" class="btn btn-danger">Google</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cancel</button>
+                             
+                                    <a href="">Quên mật khẩu?</a>
+                               
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDangKy">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDangNhap" data-bs-dismiss="modal">Đăng nhập  </button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDangKy" data-bs-dismiss="modal"style=" text-decoration: underline;">Đăng Ký</button>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col">
+                                    <p>đăng nhập với</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="" class="btn btn-primary">Facbook</a>
+                                </div>
+                                <div class="col">
+                                    <p>or</p>
+                                </div>
+                                <div class="col">
+                                    <a href="" class="btn btn-danger">Google</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p style="text-align: center;">--------------------Hoặc--------------------</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="hoten" placeholder="Họ Tên">
+                                    <label for="hoten" class="form-label"></label>
+                                    <span id="errhoten" style="color: red; font-size: small;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="email" class="form-control" id="em" placeholder="Email">
+                                    <label for="em" class="form-label"></label>
+                                    <span id="errem" style="color: red; font-size: small;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="password" class="form-control" id="matkhau" placeholder="mật khẩu">
+                                    <label for="matkhau" class="form-label"></label>
+                                    <span id="errmatkhau" style="color: red" ></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="password" class="form-control" id="nhaplaimatkhau" placeholder="nhập lại mật khẩu">
+                                    <label for="nhaplaimatkhau" class="form-label"></label>
+                                    <span id="errnhaplaimatkhau" style="color:  red;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input type="checkbox" class="form-check" id="dieukhoan">
+                                </div>
+                                <div class="col">
+                                    <p>tôi đồng ý với các điều khoản của trang web</p>
+                                    <label for="dieukhoan" class="form-label"></label>
+                                    <span id="errdieukhoan" style="color:  red;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary" id="btnDangKy"> Đăng Ký</button>
+                                    <span id="errDangKy" style="color: red; font-size: small;"></span>  
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                //đăng nhập
+                $("#email").blur(function(){
+                    var email = document.getElementById("email").value;
+                    var regemail=/^[a-zA-Za-z0-9_]+@gmail\.com$/;
+                    if(email==""|| email == null || !regemail.test(email)){
+                        erremail.innerHTML="email phải đúng cú pháp name@gmail.com";
+                        return false;
+                    }else{
+                        erremail.innerHTML="";
+                    }
+                })
+                $("#show-password").change(function(){
+                    var passwordInput = document.getElementById('pwd');
+                    if (this.checked) {
+                        passwordInput.type = 'text';
+                    } else {
+                        passwordInput.type = 'password';
+                    }
+                })
+                $("#btnDangNhap").click(function(){
+                    var password = document.getElementById('pwd').value;
+                    if (email == "admin1@gmail.com" || password == "admin123") {
+                        window.location.href = "../HTML/Login.HTML";
+                    } else {
+                        errDangNhap.innerHTML="nhập đúng Email hoặc mật khẩu";
+                        return false;
+                    }
+                })
+                //đăng ký
+                $("#hoten").blur(function(){
+                    var ht = document.getElementById("hoten").value;
+                    var reght = /^[A-Z][a-z]*(\s[A-Z][a-z]*)$/;
+                    if(ht == null || ht == ""){
+                        errhoten.innerHTML= "không đươc để trống";
+                    }else if(!reght.test(ht)){
+                        errhoten.innerHTML="tên gồm họ và tên và bắt đầu bằng chữ hoa"
+                    }else{
+                        errhoten.innerHTML="";
+                    }
+
+                })
+
+                $("#em").blur(function(){
+                    var email = document.getElementById("em").value;
+                    var regemail=/^[a-zA-Za-z0-9_]+@gmail\.com$/;
+                    if(email==""|| email == null || !regemail.test(email)){
+                        errem.innerHTML="email phải đúng cú pháp name@gmail.com";
+                        return false;
+                    }else{
+                        errem.innerHTML="";
+                    }
+                })
+                
+                $("#matkhau").blur(function(){
+                    var matkhau = document.getElementById("matkhau").value;
+                   
+                    if(matkhau.length < 8 ){
+                            errmatkhau.innerHTML="mật khẩu phải từ 8 ký tự trở lên";
+                            return false;
+                        }
+                        else{
+                            errmatkhau.innerHTML="";
+                        }
+                })
+                $("#nhaplaimatkhau").blur(function(){
+                    var nhaplaimatkhau = document.getElementById("nhaplaimatkhau").value;
+                    var matkhau = document.getElementById("matkhau").value;
+                    if(nhaplaimatkhau== ""|| nhaplaimatkhau==null){
+                        errnhaplaimatkhau.innerHTML="không trống";
+                    }else if(nhaplaimatkhau != matkhau){
+                        errnhaplaimatkhau.innerHTML="mật khẩu không trùng";
+                        return false;
+                    }else{
+                        errnhaplaimatkhau.innerHTML="";
+                    }
+                })
+                $("#dieukhoan").change(function(){
+                    var check = document.getElementById("dieukhoan");
+                    if(check.checked){
+                        errdieukhoan.innerHTML="";
+                    }
+                    else{
+                        errdieukhoan.innerHTML="vui lòng đồng ý với điều khoản";
+                    }
+                })
+
+                $("#btnDangKy").click(function(){
+                    var ht = document.getElementById("hoten").value;
+                    var matkhau = document.getElementById("matkhau").value;
+                    var nhaplaimatkhau = document.getElementById("nhaplaimatkhau").value;
+                    var check = document.getElementById("dieukhoan");
+                    if(ht == null || ht=="" || matkhau==null || matkhau=="" || nhaplaimatkhau== null || nhaplaimatkhau=="" ){
+                        errDangKy.innerHTML="vui lòng nhập đầy đủ thông tin";
+                        return false;
+                    }else if (check.checked) {
+                        window.location.href = "../HTML/Login.HTML";
+                    } else {
+                        errDangKy.innerHTML="vui lòng đồng ý với điều khoản";
+                        return false;
+                    }
+                })
+            });
+        </script>
+    
+</body>
+</html>
